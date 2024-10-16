@@ -1,0 +1,30 @@
+
+
+
+
+/* Aseguramos que el contenedor ocupe el ancho completo */
+.PanelNav {
+    width: 100%; /* El contenedor ocupará todo el ancho disponible */
+    display: flex; /* Flexbox para manejar el contenido interno */
+    justify-content: flex-end; /* Alineamos la imagen a la derecha */
+}
+
+.PanelNav img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    opacity: 15%;
+}
+
+.carousel-image {
+    width: 100%; /* Ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 300px; /* Altura máxima para las demás imágenes */
+    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin recortes */
+}
+
+.small-image {
+    max-height: 150px; /* Ajusta la altura máxima de la primera imagen */
+    /* Puedes cambiar esta altura a lo que necesites */
+}
+
+
