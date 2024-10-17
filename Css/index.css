@@ -1,99 +1,107 @@
-
-  
-  .card {
-    width: 200px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background-color: #fff;
+* {
+    font-family: "Spinnaker", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
-  .card:hover {
-    transform: scale(1.05) rotateY(10deg);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .card:hover .card-image img {
-    transform: scale(1.1);
-  }
-  
-  .card-content {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    position: relative;
-    color: #333;
-    animation: titleAnimation 2s ease-in-out infinite;
-  }
-  
-  @keyframes titleAnimation {
-    0% {
-      color: #333;
-    }
-    50% {
-      color: #ff6600;
-    }
-    100% {
-      color: #333;
-    }
-  }
-  
-  .card-description {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-    color: #666;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .card:hover .card-description {
-    opacity: 0.7;
-  }
-  
-  .card-button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    border: none;
-    background-color: #ff6600;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  .card-button:hover {
-    background-color: #ff3300;
-    transform: translateY(-5px);
+  :root {
+    --x: 45deg; /* Valor inicial del ángulo */
   }
   
   .cards-section {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
     padding: 50px 0;
+    margin-bottom: 55px;
+    margin-top: 55px;
+
+
   }
   
-  .cards-section::before {
-    content: "";
-    background-image: url('../Img/Panel_Icon.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.25; /* Aplica opacidad al fondo */
-    
+  .card:nth-child(2) {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(var(--x), #00ccff, #0e1538, #0e1538, #d400d4);
+    transition: background 0.3s ease; /* Transición suave al cambiar el ángulo */
+  }
+  .card:nth-child(1) {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(var(--x), #07ff18, #000000, #000000, #ff0000);
+    transition: background 0.3s ease; 
+  }
+  
+  .card-content {
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Spinnaker", sans-serif;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .card-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #9d00ff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-button:hover {
+    background-color: #45a2ff;
+  }
+  
+
+.panel-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .panel {
     position: absolute;
-    top: -0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+    background: #000000; /* Panel oscuro */
+    z-index: -1;
+
   }
-  
+
+  .video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
