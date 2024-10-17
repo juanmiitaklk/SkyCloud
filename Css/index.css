@@ -1,30 +1,99 @@
 
-
-
-
-/* Aseguramos que el contenedor ocupe el ancho completo */
-.PanelNav {
-    width: 100%; /* El contenedor ocupará todo el ancho disponible */
-    display: flex; /* Flexbox para manejar el contenido interno */
-    justify-content: flex-end; /* Alineamos la imagen a la derecha */
-}
-
-.PanelNav img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    opacity: 15%;
-}
-
-.carousel-image {
-    width: 100%; /* Ocupará el 100% del ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 300px; /* Altura máxima para las demás imágenes */
-    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin recortes */
-}
-
-.small-image {
-    max-height: 150px; /* Ajusta la altura máxima de la primera imagen */
-    /* Puedes cambiar esta altura a lo que necesites */
-}
-
-
+  
+  .card {
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff;
+  }
+  
+  .card:hover {
+    transform: scale(1.05) rotateY(10deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-image img {
+    transform: scale(1.1);
+  }
+  
+  .card-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    position: relative;
+    color: #333;
+    animation: titleAnimation 2s ease-in-out infinite;
+  }
+  
+  @keyframes titleAnimation {
+    0% {
+      color: #333;
+    }
+    50% {
+      color: #ff6600;
+    }
+    100% {
+      color: #333;
+    }
+  }
+  
+  .card-description {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #666;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-description {
+    opacity: 0.7;
+  }
+  
+  .card-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .card-button:hover {
+    background-color: #ff3300;
+    transform: translateY(-5px);
+  }
+  
+  .cards-section {
+    position: relative;
+    padding: 50px 0;
+  }
+  
+  .cards-section::before {
+    content: "";
+    background-image: url('../Img/Panel_Icon.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.25; /* Aplica opacidad al fondo */
+    
+    position: absolute;
+    top: -0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+  }
+  

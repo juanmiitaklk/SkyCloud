@@ -3,71 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/index.css">
     <title>SkyCloud</title>
-    <!-- Ruta del icono -->
-    <link rel="icon" href="Img/icon.png" type="image/png" />
-    <link href="Css/index.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <style>
-      /* Flechas del carrusel */
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        background-color: black;
-      }
-
-      /* Estilo del navbar */
-      .navbar {
-        background-color: black;
-      }
-      /* Texto navbar */
-      .navbar-nav .nav-link {
-        color: white;
-      }
-
-      /* Ajustes para la imagen del navbar */
-      .navbar-brand img {
-        max-height: 60px;
-        width: auto;
-      }
-
-      /* Ajustes para la resolucion*/
-      @media (max-width: 768px) {
-        .navbar-brand img {
-          max-height: 40px;
-        }
-      }
-      @media (max-width: 576px) {
-        .navbar-brand img {
-          max-height: 30px;
-        }
-      }
-
-      /* Indicadores del carrusel */
-      .carousel-indicators [data-bs-target] {
-        background-color: black;
-      }
-
-      /* Carrusel imagenes */
-      .carousel-image {
-        width: 100%;
-        height: 100vh;
-        max-height: 300px;
-        object-fit: contain;
-      }
-
-      .small-image {
-        max-height: 150px;
-      }
-    </style>
   </head>
-  <body class="bg-white">
-    <nav class="navbar navbar-expand-lg">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="Img/Icon.png" alt="image/png"
+          ><img src="Img/Icon.png" alt="SkyCloud Logo" style="max-height: 60px"
         /></a>
         <button
           class="navbar-toggler"
@@ -101,7 +48,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Servicios</a></li>
                 <li><a class="dropdown-item" href="#">¿Por qué?</a></li>
-                <li><a class="dropdown-item" href="#">Soporte</a></li>
+                <li><a class="dropdown-item" href="/Pages/Contacto.html">Contacto</a></li>
               </ul>
             </li>
           </ul>
@@ -109,65 +56,218 @@
       </div>
     </nav>
 
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="2000"
-    >
-      <!-- Desplazamiento automático cada 2 segundos -->
+    <div id="carouselExampleCaptions" class="carousel slide vh-100">
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="0"
-          class="active"
+          class="active bg-dark"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="1"
+          class="bg-dark"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="2"
+          class="bg-dark"
           aria-label="Slide 3"
         ></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="Img/Foto5RC.png" class="carousel-image" alt="..." />
+          <img
+            src="Img/Foto3CR.png"
+            class="d-block w-100 vh-100"
+            alt="imagenCarrusel1"
+          />
+          <div class="carousel-caption d-none d-md-block text-black">
+            <h5>Soluciones de computación en la nube</h5>
+            <p>
+              Potencia tu negocio con nuestras tecnologías de nube de
+              vanguardia.
+            </p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="Img/Foto4RC.jpg" class="carousel-image" alt="..." />
+          <img
+            src="Img/Foto4RC.png"
+            class="d-block w-100 vh-100"
+            alt="imagenCarrusel2"
+          />
+          <div class="carousel-caption d-none d-md-block text-black">
+            <h5>Infraestructura robusta</h5>
+            <p>
+              Centros de datos de última generación que garantizan un tiempo de
+              actividad del 99,99 %.
+            </p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="Img/Foto3CR.png" class="carousel-image" alt="..." />
+          <img
+            src="Img/Foto5RC.png"
+            class="d-block w-100 vh-100"
+            alt="imagenCarrusel3"
+          />
+          <div class="carousel-caption d-none d-md-block text-black">
+            <h5>Seguridad sin concesiones</h5>
+            <p>
+              La seguridad de sus datos es nuestra principal prioridad con el
+              cifrado avanzado.
+            </p>
+          </div>
         </div>
       </div>
+
       <button
-        class="carousel-control-prev"
+        class="carousel-control-prev btn btn-dark"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        class="carousel-control-next btn btn-dark"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <header class="bg-primary text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="font-weight-light text-white">
+          Presentación
+        </h1>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header class="bg-primary text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="font-weight-light text-white">Características</h1>
+      </div>
+    </header>
+
+    <div class="container Características">
+      <hr class="featurette-divider" />
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Infraestructura <span class="text-muted">IaaS</span>
+          </h2>
+          <p class="lead">
+            Es ideal para empresas que necesitan control total sobre la
+            infraestructura, como servidores, almacenamiento y redes. Es
+            flexible, pero requiere gestión técnica. <br />
+            <br />
+            IaaS ofrece infraestructura tecnológica en la nube. Esto significa
+            que proporciona a los usuarios los recursos fundamentales de
+            computación como servidores, almacenamiento, redes y capacidad de
+            procesamiento. Las empresas pueden alquilar estos recursos según su
+            necesidad, eliminando la necesidad de mantener infraestructura
+            física propia. <br />
+            <br /><b>Ejemplo práctico:</b> Una startup necesita alojar su
+            aplicación web, pero no quiere invertir en servidores físicos. Usan
+            IaaS para crear un servidor virtual con suficiente capacidad, y a
+            medida que crecen, ajustan los recursos en tiempo real.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="Img/Dalle1.png" />
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">
+            Plataforma <span class="text-muted">PaaS</span>
+          </h2>
+          <p class="lead">
+            Es ideal para desarrolladores que quieren centrarse en escribir
+            código sin preocuparse por la infraestructura. Reduce la carga
+            operativa, pero ofrece menos control sobre la configuración del
+            hardware <br />
+            <br />
+            PaaS es un servicio en la nube que proporciona una plataforma
+            completa para desarrollar, ejecutar y gestionar aplicaciones sin
+            tener que preocuparse por la infraestructura subyacente. Es decir,
+            PaaS simplifica el proceso de desarrollo, ya que ofrece las
+            herramientas necesarias para construir aplicaciones rápidamente.
+            <br />
+            <br />
+            <b>Ejemplo práctico:</b> Un desarrollador quiere lanzar una
+            aplicación móvil con una API en la nube. En lugar de configurar un
+            servidor, bases de datos, y gestionar la infraestructura, usa un
+            servicio PaaS que le permite subir su código directamente, haciendo
+            que la plataforma maneje todo lo demás.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="Img/Dalle2.png" />
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+    </div>
+
+    <header class="bg-success text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="font-weight-light text-white">Servicios</h1>
+      </div>
+    </header>
+
+    <div class="container my-5 cards-section">
+      <div class="d-flex justify-content-center">
+        <div class="card mx-3">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">IaaS</h2>
+            <p class="card-description">Lorem ipsum dolor sit amet</p>
+            <button class="card-button">Leer Más</button>
+          </div>
+        </div>
+    
+        <div class="card mx-3">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">PaaS</h2>
+            <p class="card-description">Lorem ipsum dolor sit amet consec</p>
+            <button class="card-button">Leer Más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
