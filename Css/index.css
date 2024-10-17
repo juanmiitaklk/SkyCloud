@@ -105,3 +105,11 @@ video {
     max-width: 100%;
     height: auto;
 }
+
+.card1{
+    transition: transform 0.2s;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+}
