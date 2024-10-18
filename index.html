@@ -15,6 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Spinnaker&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
   </head>
   <main>
   <body>
@@ -39,9 +41,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Presentacion">Presentación</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Características</a>
+              <a class="nav-link" href="#Contacto">Contacto</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -53,13 +55,9 @@
                 >Productos</a
               >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Servicios</a></li>
-                <li><a class="dropdown-item" href="#">¿Por qué?</a></li>
-                <li>
-                  <a class="dropdown-item" href="/Pages/Contacto.html"
-                    >Contacto</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="#Servicios">Servicios</a></li>
+                <li><a class="dropdown-item" href="#Caracteristicas">Características</a></li>
+                <li><a class="dropdown-item" href="#Beneficios">Beneficios</a></li>
               </ul>
             </li>
           </ul>
@@ -159,16 +157,16 @@
 
     <header class="bg-black text-center py-5 mb-4">
       <div class="container">
-        <h1 class="font-weight-light text-white">Presentación</h1>
+        <h1 id="Presentacion" class="font-weight-light text-white">Presentación</h1>
       </div>
     </header>
 
     <div class="container mt-5">
       <section id="presentacion" class="text-center">
           <h1>Impulsa tu Negocio  </h1>
-          <p>¿Por qué debo comprar el producto?<br>
+          <p class="textjust" ><b>¿Por qué debo comprar el producto?</b><br> <br>
             Nuestros servicios de IaaS (Infraestructura como Servicio) y PaaS (Plataforma como Servicio) te ofrecen la flexibilidad, escalabilidad y control que tu negocio necesita para crecer de manera eficiente. Con IaaS, obtienes acceso a recursos de computación, almacenamiento y redes bajo demanda, sin las complicaciones y costos de gestionar infraestructura física. Con PaaS, puedes desarrollar, implementar y gestionar aplicaciones sin preocuparte por los servidores subyacentes, permitiéndote enfocarte en la innovación y reducir tiempos de desarrollo.</p>
-          <p>¿Qué necesidad cubre?<br>
+          <p class="textjust"><b>¿Qué necesidad cubre?</b><br> <br>
             Infraestructura tecnológica escalable: Con IaaS, eliminas la necesidad de comprar y mantener hardware costoso, al tiempo que escalas tus recursos según la demanda.
             Desarrollo ágil y simplificado: Con PaaS, tus equipos de desarrollo pueden concentrarse en crear aplicaciones y productos innovadores sin tener que preocuparse por la configuración y administración de la infraestructura, mejorando la eficiencia y el tiempo de comercialización.</p>
           <div class="video-wrapper">
@@ -183,18 +181,18 @@
 
     <header class="bg-black text-center py-5 mb-4">
       <div class="container">
-        <h1 class="font-weight-light text-white">Características</h1>
+        <h1 id="Beneficios" class="font-weight-light text-white">Beneficios</h1>
       </div>
     </header>
 
-    <div class="container Características">
+    <div class="container Beneficios">
       <hr class="featurette-divider" />
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">
             Infraestructura <span class="text-muted">IaaS</span>
           </h2>
-          <p class="lead">
+          <p class="textjust lead">
             Es ideal para empresas que necesitan control total sobre la
             infraestructura, como servidores, almacenamiento y redes. Es
             flexible, pero requiere gestión técnica. <br />
@@ -221,7 +219,7 @@
           <h2 class="featurette-heading">
             Plataforma <span class="text-muted">PaaS</span>
           </h2>
-          <p class="lead">
+          <p class="textjust lead">
             Es ideal para desarrolladores que quieren centrarse en escribir
             código sin preocuparse por la infraestructura. Reduce la carga
             operativa, pero ofrece menos control sobre la configuración del
@@ -250,7 +248,7 @@
 
     <header class="bg-black text-center py-5 mb-4">
       <div class="container">
-        <h1 class="font-weight-light text-white">Beneficios</h1>
+        <h1 id="Caracteristicas" class="font-weight-light text-white">Características</h1>
       </div>
     </header>
 
@@ -258,23 +256,32 @@
       <div class="row text-center">
           <div class="col-md-6 mb-4">
               <div class="card1">
-                  <img src="https://picsum.photos/seed/-0VP1ObXHHfeePpEg5PBh/512" class="card1-img-top" alt="Beneficio 1">
+                  <img src="Img\Cloud3jpg.png" class="card1-img-top" alt="Beneficio 1">
                   <div class="card1-body">
                       <h5 class="card1-title">IaaS</h5>
-                     <ul class="card1-text text-align-justify text-decoration-none">
+                     <ul class="textjust card1-text">
                         <li>Servidores virtuales: Los usuarios pueden crear máquinas virtuales con diferentes especificaciones (CPU, RAM, almacenamiento) según sus necesidades.</li>
                         <li>Almacenamiento en la nube: Espacio de almacenamiento escalable para datos, backups y archivos.</li>
                         <li>Redes virtuales: Los usuarios pueden gestionar sus propias redes privadas y sistemas de firewall.</li>
+                        <li>Recursos escalables: Se pueden ajustar los recursos según la demanda, pagando solo por lo que se utiliza.</li>
+                        <li>Control total: Tienes control sobre el sistema operativo, configuraciones y aplicaciones instaladas.</li>
                       </ul><
                   </div>
               </div>
           </div>
           <div class="col-md-6 mb-4">
               <div class="card1">
-                  <img src="https://picsum.photos/seed/hSe9YgOBLrpzmTjX-ECFx/512" class="card1-img-top" alt="Beneficio 2">
+                  <img src="Img\Cloud1512.png" class="card1-img-top" alt="Beneficio 2">
                   <div class="card1-body">
                       <h5 class="card1-title">PaaS</h5>
-                      <p class="card1-text">Descripción breve del segundo beneficio del producto. Explica su importancia y cómo mejora la experiencia del usuario.</p>
+                      <ul class="textjust card1-text">
+                        <li>Entornos de desarrollo preconfigurados: Incluye todo lo necesario para desarrollar aplicaciones como servidores web, bases de datos, sistemas operativos y entornos de programación.</li>
+                        <li>Herramientas de gestión: Gestión automática de servidores, balanceo de carga, escalado de aplicaciones y monitorización del rendimiento.</li>
+                        <li>Soporte para múltiples lenguajes de programación: Plataformas como PaaS suelen admitir lenguajes como Java, Python, Ruby, .NET, etc.</li>
+                        <li>Bases de datos integradas: Bases de datos relacionales o NoSQL listas para ser utilizadas en la aplicación.</li>
+                        <li>Escalabilidad automática: PaaS ajusta automáticamente los recursos (CPU, RAM) según el tráfico o las necesidades de la aplicación.</li>
+
+                      </ul>
                   </div>
                   
               </div>
@@ -287,7 +294,7 @@
 
     <header class="bg-black text-center py-5 mb-4">
       <div class="container">
-        <h1 class="font-weight-light text-white">Servicios</h1>
+        <h1 id="Servicios" class="font-weight-light text-white">Servicios</h1>
       </div>
     </header>
 
@@ -311,7 +318,7 @@
       </div>
     </div>
 
-    <header class="bg-black text-center py-5 mb-4">
+    <header id="Contacto" class="bg-black text-center py-5 mb-4">
       <div class="container">
         <h1 class="font-weight-light text-white">Contacto</h1>
       </div>
@@ -363,26 +370,54 @@
               Acepto los términos y condiciones
             </label>
           </div>
-    
+
           <div class="col-12 mt-4">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thankYouModal">
+                Enviar
+            </button>
+        </div>
         </form>
+        <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="thankYouModalLabel">¡Gracias!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      En breves nos podremos en contacto con usted.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
       </div>
     </div>
     
     <hr class="featurette-divider" />
 
     <footer class="bg-black text-center py-5">
-
       <div class="container">
-    
         <!-- Contenido del footer -->
-        <div class="cell">
-          <button class="row-2 text-black">Contacto</button>
-          <button class="row-2 text-black">Compra</button>
-          <button class="row-2 text-black">Home</button>
-          <hr class="featurette-divider bg-white">
+        <div class="row">
+          <!-- Botones de navegación -->
+          <div class="col-12">
+            <a class="btn btn-link text-decoration-none" onclick="location.href='#Contacto';">  <i class="fas fa-envelope fa-2x"></i></a>
+            <a class="btn btn-link text-decoration-none" onclick="location.href='#Servicios';">                <i class="fas fa-cloud fa-2x"></i></a>
+            <a class="btn btn-link text-decoration-none" onclick="location.href='#';"> <i class="fas fa-home fa-2x"></i></a>
+          </div>
+    
+          <!-- Nombre en el footer -->
+          <div class="col-12">
+            <h1 class="text-white mt-4">Juan Manuel González Díaz</h1>
+          </div>
+          
+          <!-- Línea divisoria -->
+          <div class="col-12">
+            <hr class="bg-white">
+          </div>
         </div>
       </div>
     </footer>

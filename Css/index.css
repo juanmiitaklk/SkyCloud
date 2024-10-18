@@ -7,6 +7,10 @@
   :root {
     --x: 45deg; /* Valor inicial del ángulo */
   }
+
+  html {
+    scroll-behavior: smooth;
+}
   
   .cards-section {
     display: flex;
@@ -112,4 +116,9 @@ video {
 
 .card1:hover {
     transform: scale(1.05);
+}
+
+.textjust{
+  text-align: justify;
+  text-decoration: none;
 }
