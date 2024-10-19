@@ -17,7 +17,6 @@
       rel="stylesheet"
     />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
   </head>
   <main>
   <body>
@@ -283,7 +282,7 @@
         card.addEventListener("mousemove", (e) => {
           const rect = card.getBoundingClientRect();
           const x = e.clientX - rect.left;
-          const angle = (x / rect.width) * 360; // Convierte la posición x en un ángulo
+          const angle = (x / rect.width) * 360; 
           card.style.setProperty("--x", angle + "deg");
         });
       });
