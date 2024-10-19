@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/index.css" />
+    <link rel="icon" type="image/png" href="../Img/Mini_Icon.png" />
+    <title>SkyCloud</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Spinnaker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../Img/Icon.png" alt="SkyCloud Logo" style="max-height: 60px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#Presentacion">Presentación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/Contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Productos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../index.html#Servicios">Servicios</a></li>
+                <li><a class="dropdown-item" href="../index.html#Caracteristicas">Características</a></li>
+                <li><a class="dropdown-item" href="#">Beneficios</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <hr class="featurette-divider mt-5" />
+    <hr class="featurette-divider mt-5 " />
+
+
+    <div class="container Beneficios">
+      <hr class="featurette-divider" />
+      <div class="row featurette">
+        <div class="col-md-7 align-self-center">
+          <h2 class="featurette-heading">
+            Infraestructura <span class="text-muted">IaaS</span>
+          </h2>
+          <p class="text-justify lead">
+            Es ideal para empresas que necesitan control total sobre la
+            infraestructura, como servidores, almacenamiento y redes. Es
+            flexible, pero requiere gestión técnica. <br /><br />
+            IaaS ofrece infraestructura tecnológica en la nube. Esto significa
+            que proporciona a los usuarios los recursos fundamentales de
+            computación como servidores, almacenamiento, redes y capacidad de
+            procesamiento. Las empresas pueden alquilar estos recursos según su
+            necesidad, eliminando la necesidad de mantener infraestructura
+            física propia. <br /><br /><b>Ejemplo práctico:</b> Una startup
+            necesita alojar su aplicación web, pero no quiere invertir en
+            servidores físicos. Usan IaaS para crear un servidor virtual con
+            suficiente capacidad, y a medida que crecen, ajustan los recursos en
+            tiempo real.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="../Img/Dalle1.png" alt="IaaS Image" class="img-fluid rounded" />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2 align-self-center">
+          <h2 class="featurette-heading">
+            Plataforma <span class="text-muted">PaaS</span>
+          </h2>
+          <p class="text-justify lead">
+            Es ideal para desarrolladores que quieren centrarse en escribir
+            código sin preocuparse por la infraestructura. Reduce la carga
+            operativa, pero ofrece menos control sobre la configuración del
+            hardware <br /><br />
+            PaaS es un servicio en la nube que proporciona una plataforma
+            completa para desarrollar, ejecutar y gestionar aplicaciones sin
+            tener que preocuparse por la infraestructura subyacente. Es decir,
+            PaaS simplifica el proceso de desarrollo, ya que ofrece las
+            herramientas necesarias para construir aplicaciones rápidamente.
+            <br /><br />
+            <b>Ejemplo práctico:</b> Un desarrollador quiere lanzar una
+            aplicación móvil con una API en la nube. En lugar de configurar un
+            servidor, bases de datos, y gestionar la infraestructura, usa un
+            servicio PaaS que le permite subir su código directamente, haciendo
+            que la plataforma maneje todo lo demás.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="../Img/Dalle2.png" alt="PaaS Image" class="img-fluid rounded" />
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <footer class="bg-black text-center py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <a class="btn btn-link text-decoration-none text-white" onclick="location.href='../Pages/Contacto.html';">
+              <i class="fas fa-envelope fa-2x"></i>
+            </a>
+            <a class="btn btn-link text-decoration-none text-white" onclick="location.href='../index.html#Servicios';">
+              <i class="fas fa-cloud fa-2x"></i>
+            </a>
+            <a class="btn btn-link text-decoration-none text-white" onclick="location.href='../index.html#Home';">
+              <i class="fas fa-home fa-2x"></i>
+            </a>
+          </div>
+    
+          <div class="col-12">
+            <h1 class="text-white mt-4">Juan Manuel González Díaz</h1>
+          </div>
+          
+          <div class="col-12">
+            <hr class="bg-white" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </main>  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

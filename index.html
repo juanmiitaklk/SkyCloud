@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Css/index.css" />
+    <link rel="icon" type="image/png" href="Img\Mini_Icon.png">
     <title>SkyCloud</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -43,7 +44,7 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="#Presentacion">Presentación</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#Contacto">Contacto</a>
+              <a class="nav-link" href="Pages/Contacto.html">Contacto</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -57,7 +58,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#Servicios">Servicios</a></li>
                 <li><a class="dropdown-item" href="#Caracteristicas">Características</a></li>
-                <li><a class="dropdown-item" href="#Beneficios">Beneficios</a></li>
+                <li><a class="dropdown-item" href="Pages/Beneficios.html">Beneficios</a></li>
               </ul>
             </li>
           </ul>
@@ -65,7 +66,7 @@
       </div>
     </nav>
 
-    <div id="carouselExampleCaptions" class="carousel slide vh-100">
+    <div id="carouselExampleCaptions" class="carousel slide vw-100 vh-100">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -94,7 +95,7 @@
         <div class="carousel-item active">
           <img
             src="Img/Foto3CR.png"
-            class="d-block w-100 vh-100"
+            class="vw-100 vh-100"
             alt="imagenCarrusel1"
           />
           <div class="carousel-caption d-none d-md-block text-black">
@@ -179,72 +180,6 @@
 
   <hr class="featurette-divider" />
 
-    <header class="bg-black text-center py-5 mb-4">
-      <div class="container">
-        <h1 id="Beneficios" class="font-weight-light text-white">Beneficios</h1>
-      </div>
-    </header>
-
-    <div class="container Beneficios">
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">
-            Infraestructura <span class="text-muted">IaaS</span>
-          </h2>
-          <p class="textjust lead">
-            Es ideal para empresas que necesitan control total sobre la
-            infraestructura, como servidores, almacenamiento y redes. Es
-            flexible, pero requiere gestión técnica. <br />
-            <br />
-            IaaS ofrece infraestructura tecnológica en la nube. Esto significa
-            que proporciona a los usuarios los recursos fundamentales de
-            computación como servidores, almacenamiento, redes y capacidad de
-            procesamiento. Las empresas pueden alquilar estos recursos según su
-            necesidad, eliminando la necesidad de mantener infraestructura
-            física propia. <br />
-            <br /><b>Ejemplo práctico:</b> Una startup necesita alojar su
-            aplicación web, pero no quiere invertir en servidores físicos. Usan
-            IaaS para crear un servidor virtual con suficiente capacidad, y a
-            medida que crecen, ajustan los recursos en tiempo real.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img src="Img/Dalle1.png" />
-        </div>
-      </div>
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">
-            Plataforma <span class="text-muted">PaaS</span>
-          </h2>
-          <p class="textjust lead">
-            Es ideal para desarrolladores que quieren centrarse en escribir
-            código sin preocuparse por la infraestructura. Reduce la carga
-            operativa, pero ofrece menos control sobre la configuración del
-            hardware <br />
-            <br />
-            PaaS es un servicio en la nube que proporciona una plataforma
-            completa para desarrollar, ejecutar y gestionar aplicaciones sin
-            tener que preocuparse por la infraestructura subyacente. Es decir,
-            PaaS simplifica el proceso de desarrollo, ya que ofrece las
-            herramientas necesarias para construir aplicaciones rápidamente.
-            <br />
-            <br />
-            <b>Ejemplo práctico:</b> Un desarrollador quiere lanzar una
-            aplicación móvil con una API en la nube. En lugar de configurar un
-            servidor, bases de datos, y gestionar la infraestructura, usa un
-            servicio PaaS que le permite subir su código directamente, haciendo
-            que la plataforma maneje todo lo demás.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img src="Img/Dalle2.png" />
-        </div>
-      </div>
-      <hr class="featurette-divider" />
-    </div>
 
     <header class="bg-black text-center py-5 mb-4">
       <div class="container">
@@ -256,7 +191,7 @@
       <div class="row text-center">
           <div class="col-md-6 mb-4">
               <div class="card1">
-                  <img src="Img\Cloud3jpg.png" class="card1-img-top" alt="Beneficio 1">
+                  <img src="Img\Cloud3jpg.png" class="card1-img-top" alt="Caracteristicas 1">
                   <div class="card1-body">
                       <h5 class="card1-title">IaaS</h5>
                      <ul class="textjust card1-text">
@@ -271,7 +206,7 @@
           </div>
           <div class="col-md-6 mb-4">
               <div class="card1">
-                  <img src="Img\Cloud1512.png" class="card1-img-top" alt="Beneficio 2">
+                  <img src="Img\Cloud1512.png" class="card1-img-top" alt="Caracteristicas 2">
                   <div class="card1-body">
                       <h5 class="card1-title">PaaS</h5>
                       <ul class="textjust card1-text">
@@ -317,104 +252,22 @@
         </div>
       </div>
     </div>
-
-    <header id="Contacto" class="bg-black text-center py-5 mb-4">
-      <div class="container">
-        <h1 class="font-weight-light text-white">Contacto</h1>
-      </div>
-    </header>
-
-
-    
-    <div class="panel-container">
-      <div class="panel"></div>
-      <div class="container">
-        <form class="row">
-          <div class="col-6">
-            <label for="emailInput" class="form-label text-white">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="emailInput"
-              placeholder="Escribe tu email"
-            />
-          </div>
-    
-          <div class="col-6">
-            <label for="inputTlf" class="form-label text-white">Tu Teléfono</label>
-            <input
-              type="telefono"
-              class="form-control"
-              id="inputTlf"
-              placeholder="Escribe tu teléfono"
-            />
-          </div>
-    
-          <div class="col-12">
-            <label for="inputName" class="form-label text-white"> <br> Tu Nombre</label>
-            <input
-              type="name"
-              class="form-control"
-              id="inputName"
-              placeholder="Escribe tu nombre"
-            />
-          </div>
-    
-          <div class="col-12 d-flex align-items-center mt-3">
-            <input
-              type="checkbox"
-              id="checkTerms"
-              class="form-check-input me-2"
-            />
-            <label for="checkTerms" class="form-check-label text-white">
-              Acepto los términos y condiciones
-            </label>
-          </div>
-
-          <div class="col-12 mt-4">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thankYouModal">
-                Enviar
-            </button>
-        </div>
-        </form>
-        <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="thankYouModalLabel">¡Gracias!</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      En breves nos podremos en contacto con usted.
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
-    </div>
     
     <hr class="featurette-divider" />
 
     <footer class="bg-black text-center py-5">
       <div class="container">
-        <!-- Contenido del footer -->
         <div class="row">
-          <!-- Botones de navegación -->
           <div class="col-12">
-            <a class="btn btn-link text-decoration-none" onclick="location.href='#Contacto';">  <i class="fas fa-envelope fa-2x"></i></a>
+            <a class="btn btn-link text-decoration-none" onclick="location.href='Pages/Contacto.html';">  <i class="fas fa-envelope fa-2x"></i></a>
             <a class="btn btn-link text-decoration-none" onclick="location.href='#Servicios';">                <i class="fas fa-cloud fa-2x"></i></a>
             <a class="btn btn-link text-decoration-none" onclick="location.href='#';"> <i class="fas fa-home fa-2x"></i></a>
           </div>
     
-          <!-- Nombre en el footer -->
           <div class="col-12">
             <h1 class="text-white mt-4">Juan Manuel González Díaz</h1>
           </div>
           
-          <!-- Línea divisoria -->
           <div class="col-12">
             <hr class="bg-white">
           </div>

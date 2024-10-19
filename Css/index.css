@@ -5,7 +5,7 @@
   }
   
   :root {
-    --x: 45deg; /* Valor inicial del ángulo */
+    --x: 45deg; 
   }
 
   html {
@@ -32,7 +32,7 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(var(--x), #00ccff, #0e1538, #0e1538, #d400d4);
-    transition: background 0.3s ease; /* Transición suave al cambiar el ángulo */
+    transition: background 0.3s ease; 
   }
   .card:nth-child(1) {
     background-color: white;
@@ -93,7 +93,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000000; /* Panel oscuro */
+    background: #000000; 
     z-index: -1;
 
   }
