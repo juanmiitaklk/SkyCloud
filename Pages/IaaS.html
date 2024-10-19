@@ -21,15 +21,31 @@
       rel="stylesheet"
     />
   </head>
-  <style>
-   
-    .card1-img-top {
-      width: 100%;
-      max-width: 500px; 
-    }
+    <style>
+.h5_service {
+    text-align: left;
+    padding-left: 5%;
+}
 
-  </style>
-  <body>
+.h5_service h5 {
+    width: 110%;
+}
+
+.card1-tittle h1{
+    width: 150%;
+}
+
+
+
+.h5_service2 h5{
+    background-color: rgb(161, 211, 255);
+    border-radius: 8px;
+    padding: 38px;
+    width: 150%;
+
+
+}
+    </style>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -81,47 +97,54 @@
 
 
     <div class="container mx-auto">
-        <div class="row text-center">
+        <div class="row">
             <div class="col-md-6 mb-4">
-                <div class="card1">
-                    <img src="../Img/Cloud3jpg.jpg" class="card1-img-top" alt="Caracteristicas 1">
-                    <div class="card1-body">
-                        <h5 class="card1-title">IaaS</h5>
-                       <ul class="textjust card1-text">
-                          <li>Servidores virtuales: Los usuarios pueden crear máquinas virtuales con diferentes especificaciones (CPU, RAM, almacenamiento) según sus necesidades.</li>
-                          <li>Almacenamiento en la nube: Espacio de almacenamiento escalable para datos, backups y archivos.</li>
-                          <li>Redes virtuales: Los usuarios pueden gestionar sus propias redes privadas y sistemas de firewall.</li>
-                          <li>Recursos escalables: Se pueden ajustar los recursos según la demanda, pagando solo por lo que se utiliza.</li>
-                          <li>Control total: Tienes control sobre el sistema operativo, configuraciones y aplicaciones instaladas.</li>
-                        </ul>
+                    <h1 class="card1-title">¿Qué es IaaS?</h1>
+                    <div class="h5_service">
+                    <h5 class="h5_service">IaaS, o infraestructura como servicio, es un modelo de cloud computing que ofrece acceso bajo demanda a recursos de computación, como servidores, almacenamiento, redes y virtualización.
+                    Se trata de un modelo muy atractivo en comparación con la manera tradicional de adquirir recursos de computación con los que ejecutar aplicaciones o almacenar datos, ya que esta requiere una mayor inversión de tiempo y dinero. Las organizaciones deben comprar equipos a través de procesos de aprovisionamiento que pueden llevar meses. También deben invertir en instalaciones físicas (normalmente, salas especializadas con sistemas energéticos y de refrigeración). Además, las empresas necesitan profesionales de TI para gestionarlos y mantenerlos después de desplegar los sistemas.  
+                    Con este modelo, es complicado escalar los recursos cuando se producen picos de demanda o el negocio crece. Corres el riesgo de quedarte sin capacidad o de crear demasiadas compilaciones y pagar por una infraestructura que no usas nunca.           
+                    Estos problemas están causando que crezca el número de empresas que usan soluciones de IaaS. <a href="https://cloud.google.com/solutions/infrastructure-modernization">Consulta más información sobre los productos y soluciones de IaaS.</a></h5>
                     </div>
-                </div>
+                    <br> <br>
+                    <h1 class="card1-title">Definición de IaaS</h1>
+                    <div class="h5_service2">
+                        <h5 class="h5_service">La infraestructura como servicio (IaaS) es la disponibilidad bajo demanda de recursos de computación de alta escalabilidad como servicios a través de Internet. De este modo, las empresas no tiene que aprovisionar, configurar ni gestionar los recursos y solo pagan por el uso que haga de estos recursos.</h5>
+                    </div>
+                    <br> <br>
+                    <h1 class="card1-tittle col-md-12"> Explicación de IaaS: ¿Cómo funciona?</h1>
+                    <div class="h5_service">
+                        <h5 class="h5_service">En el contexto del cloud computing, la infraestructura como servicio (IaaS) consiste en alquilar el acceso a servicios de infraestructura en la nube como servicios individuales a un proveedor de servicios en la nube (CSP), incluidos servidores, máquinas virtuales, recursos de redes y almacenamiento. IaaS ayuda a eliminar gran parte de la complejidad y los costes asociados a la construcción y al mantenimiento de la infraestructura física en un centro de datos on‐premise.  <br>
+                            El CSP se encarga de gestionar y mantener la infraestructura, por lo que puedes concentrarte en instalar, configurar y gestionar software, así como en mantener la seguridad de tus datos. Los proveedores de IaaS también ofrecen servicios adicionales, como gestión detallada de la facturación, almacenamiento de registros, monitorización, resiliencia del almacenamiento y seguridad. <br>
+                            Puedes acceder a recursos IaaS de pago por uso, lo que te permite pagar únicamente por consumir los recursos que necesitas. Es decir, puedes aumentar o disminuir fácilmente los recursos, lo que te permite pagar menos cuando lo necesites o aprovisionar y escalar horizontalmente recursos al instante para satisfacer la nueva demanda.
+                        </h5>
+                    </div>
             </div>
-
-
-
-
-
-
-    <footer class="bg-black text-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <a class="btn btn-link text-decoration-none" onclick="location.href='../Pages/Contacto.html';">  <i class="fas fa-envelope fa-2x"></i></a>
-              <a class="btn btn-link text-decoration-none" onclick="location.href='../index.html#Servicios';">                <i class="fas fa-cloud fa-2x"></i></a>
-              <a class="btn btn-link text-decoration-none" onclick="location.href='../index.html#Home';"> <i class="fas fa-home fa-2x"></i></a>
-            </div>
-      
-            <div class="col-12">
-              <h1 class="text-white mt-4">Juan Manuel González Díaz</h1>
-            </div>
-            
-            <div class="col-12">
-              <hr class="bg-white">
-            </div>
-          </div>
         </div>
-      </footer>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+            <footer class="bg-black text-center py-5 col-12">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <a class="btn btn-link text-decoration-none" onclick="location.href='../Pages/Contacto.html';">  <i class="fas fa-envelope fa-2x"></i></a>
+                      <a class="btn btn-link text-decoration-none" onclick="location.href='../index.html#Servicios';">                <i class="fas fa-cloud fa-2x"></i></a>
+                      <a class="btn btn-link text-decoration-none" onclick="location.href='../index.html#Home';"> <i class="fas fa-home fa-2x"></i></a>
+                    </div>
+              
+                    <div class="col-12">
+                      <h1 class="text-white mt-4">Juan Manuel González Díaz</h1>
+                    </div>
+                    
+                    <div class="col-12">
+                      <hr class="bg-white">
+                    </div>
+                  </div>
+                </div>
+              </footer>
     </main>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
